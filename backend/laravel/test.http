@@ -1,0 +1,24 @@
+### Get all products
+GET http://127.0.0.1:8000/api/products
+
+### Create a new product
+POST http://127.0.0.1:8000/api/products
+Content-Type: application/json
+
+{
+  "product_name": "Sample Product",
+  "product_type": "Demo",
+  "product_parent_id": null
+}
+
+### Update a product
+PUT http://127.0.0.1:8000/api/products/1
+Content-Type: application/json
+
+{
+  "product_name": "Updated Product",
+  "product_type": "Updated Type"
+}
+
+### Delete a product
+DELETE http://127.0.0.1:8000/api/products/1
