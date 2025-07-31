@@ -8,6 +8,8 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Product extends Model
 {
+    protected $table = 'product_table'; // Add this line
+    protected $primaryKey = 'product_id'; // Ensure this matches
     protected $fillable = ['product_name', 'product_type', 'product_parent_id'];
 
     public function parent(): BelongsTo
