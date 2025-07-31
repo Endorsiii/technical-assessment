@@ -41,8 +41,8 @@
 
 <script setup lang="ts">
 import { ref, computed, watch } from 'vue';
-import { useProductStore } from '../stores/product';
-import { Product } from '../types/product';
+import { useProductStore } from '../stores/products';
+import { Product } from '../types/products';
 
 const store = useProductStore();
 const form = ref({ product_name: '', product_type: '', product_parent_id: null as number | null });
